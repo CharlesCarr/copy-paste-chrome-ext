@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "MultiCopy",
+    "version": "1.0.1",
+    "action": {
+       "default_title": "MultiCopy",
+       "default_popup": "popup.html"
+    },
+    "description": "Store multiple snippits of text in one place for easy copy/paste"
+}
