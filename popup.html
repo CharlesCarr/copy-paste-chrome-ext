@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>MultiCopy</title>
   </head>
-  <body>
-    <h1>MultiCopy</h1>
 
-    <ul>
-      <li>
-        <input placeholder="Add text to copy" />
-        <button>Copy</button>
-      </li>
-    </ul>
+  <body class="app">
+    <h1 class="title">MultiCopy</h1>
+
+    <div class="toast-ctn"></div>
+
+    <div>
+      <input
+        id="addInput"
+        class="snippet-input add-input"
+        placeholder="Add text to copy"
+      />
+      <button class="add-btn">Add</button>
+    </div>
+
+    <ul id="snippet-list"></ul>
   </body>
+
   <script src="popup.js"></script>
 </html>
