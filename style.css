@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 ul {
@@ -68,4 +68,16 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.copy-btn,
+.del-btn {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.fa-copy, .fa-trash {
+  pointer-events: none;
+  font-size: 20px;
 }

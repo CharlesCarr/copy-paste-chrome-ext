@@ -22,7 +22,7 @@ const copyText = async (text) => {
 const displayToast = (text) => {
   const toast = document.createElement("h2");
 
-  console.log(text.substring(0,4));
+  console.log(text.substring(0, 4));
 
   if (text.substring(0, 5) === "Alert") {
     toast.innerText = text;
@@ -54,13 +54,14 @@ const addRow = () => {
   itemDiv.appendChild(newSnip);
   // Copy Btn
   const copyBtn = document.createElement("button");
-  // copyBtn.innerHTML = `<i class="fas fa-check"></li>`;
-  copyBtn.innerText = "Copy";
+  copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i>';
+  // copyBtn.innerText = "Copy";
   copyBtn.classList.add("copy-btn");
   itemDiv.appendChild(copyBtn);
   // Delete Btn
   const deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "Delete";
+  // deleteBtn.innerText = "Delete";
+  deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
   deleteBtn.classList.add("del-btn");
   itemDiv.appendChild(deleteBtn);
   // Append to list
@@ -125,12 +126,14 @@ const getLocalSnippets = () => {
     itemDiv.appendChild(newSnip);
     // Copy Btn
     const copyBtn = document.createElement("button");
-    copyBtn.innerText = "Copy";
+    // copyBtn.innerText = "Copy";
+    copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i>';
     copyBtn.classList.add("copy-btn");
     itemDiv.appendChild(copyBtn);
     // Delete Btn
     const deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "Delete";
+    // deleteBtn.innerText = "Delete";
+    deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteBtn.classList.add("del-btn");
     itemDiv.appendChild(deleteBtn);
     // Append to list
