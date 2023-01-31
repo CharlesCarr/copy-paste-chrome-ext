@@ -21,7 +21,15 @@ const copyText = async (text) => {
 
 const displayToast = (text) => {
   const toast = document.createElement("h2");
-  toast.innerText = `Copied Text! - "${text}"`;
+
+  console.log(text.substring(0,4));
+
+  if (text.substring(0, 5) === "Alert") {
+    toast.innerText = text;
+  } else {
+    toast.innerText = `Copied Text! - "${text}"`;
+  }
+
   toast.classList.add("show-toast");
   toastCtn.appendChild(toast);
 
@@ -31,6 +39,11 @@ const displayToast = (text) => {
 };
 
 const addRow = () => {
+  if (inputVal.value === "") {
+    displayToast("Alert: Input Empty");
+    return;
+  }
+
   // Create Div
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("snippet-item");
